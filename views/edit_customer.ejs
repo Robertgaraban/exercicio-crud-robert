@@ -5,23 +5,16 @@
         <form method="post" action="/customers/edit/<%=data[0].id%>">
             <table cellpadding="11">
                 <tr>
-                    <td class="label">Name</td>
-                    <td>: <input type="text" name="name" value="<%=data[0].name%>" required></td>
+                    <td class="label">pessoa</td>
+                    <td>: <input type="text" name="pessoa" value="<%=data[0].pessoa%>" required></td>
                 </tr>
                 <tr>
-                    <td class="label" valign="top">Address</td>
+                    <td class="label" valign="top">Tarefa</td>
                     <td valign="top">:
-                        <textarea name="address" required cols="30" rows="5"><%=data[0].address%></textarea>
+                        <textarea name="atarefa" required cols="30" rows="5"><%=data[0].tarefa%></textarea>
                     </td>
                 </tr>
-                <tr>
-                    <td class="label">Email</td>
-                    <td>: <input type="text" value="<%=data[0].email%>" name="email" required></td>
-                </tr>
-                <tr>
-                    <td class="label">Phone</td>
-                    <td>: <input type="text" name="phone" value="<%=data[0].phone%>" required></td>
-                </tr>
+
                 <tr>
                     <td class="label"></td>
                     <td>

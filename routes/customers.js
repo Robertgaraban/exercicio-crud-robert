@@ -11,7 +11,7 @@ exports.list = function(req, res) {
             if (err)
                 console.log("Error Selecting : %s ", err);
 
-            res.render('customers', { page_title: "Customers - Node.js", data: rows });
+            res.render('customers.ejs', { page_title: "Customers - Node.js", data: rows });
 
 
         });
